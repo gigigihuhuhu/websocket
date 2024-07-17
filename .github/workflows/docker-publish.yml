@@ -18,7 +18,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: websocket-server
+  IMAGE_NAME: kyungsu77777/websocket-server
 
 jobs:
   build:
