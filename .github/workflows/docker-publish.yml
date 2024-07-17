@@ -38,7 +38,7 @@ jobs:
       - name: Extract version from build.gradle
         id: get_version
         run: |
-          VERSION=$(grep '^version' build.gradle | sed 's/^version[[:space:]]*=[[:space:]]*//g' | tr -d '"')
+          VERSION=$(grep '^version' build.gradle | sed 's/^version[[:space:]]*=[[:space:]]*'\''\(.*\)'\''/\1/' | awk -F'-' '{print $1}')
           echo "VERSION=$VERSION"
           echo "::set-output name=VERSION::$VERSION"
 
