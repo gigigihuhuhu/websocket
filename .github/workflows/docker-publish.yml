@@ -18,7 +18,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: kyungsu77777/websocket-server
+  IMAGE_NAME: kyungsu77777/websocket
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Extract version from build.gradle
         id: get_version
         run: |

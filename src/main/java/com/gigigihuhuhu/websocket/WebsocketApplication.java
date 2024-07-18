@@ -1,13 +1,13 @@
-package com.kyungsu.telemedicine;
+package com.gigigihuhuhu.websocket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TelemedicineApplication {
+public class WebsocketApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TelemedicineApplication.class, args);
+		SpringApplication.run(WebsocketApplication.class, args);
 	}
 
 }

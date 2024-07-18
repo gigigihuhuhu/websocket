@@ -23,7 +23,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built jar file from the build stage
-COPY --from=build /app/build/libs/websocket-server-*.jar app.jar
+COPY --from=build /app/build/libs/websocket-*.jar app.jar
 
 # Expose the port the application runs on
 EXPOSE 8080

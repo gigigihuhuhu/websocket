@@ -1,4 +1,4 @@
-package com.kyungsu.telemedicine.controller;
+package com.gigigihuhuhu.websocket.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
