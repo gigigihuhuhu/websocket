@@ -11,7 +11,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
-    public void configureMessageBroker(MessageBrokerRegistry config){
+    public void configureMessageBroker(MessageBrokerRegistry config) {
         config.enableSimpleBroker("/topic");
         config.setApplicationDestinationPrefixes("/app");
     }
@@ -19,7 +19,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws")
-                .setAllowedOriginPatterns("http://localhost", "http://localhost:8081", "http://kyungsu.com", "http://video.kyungsu.com", "http://dev.kyungsu.com", "http://dev.video.kyungsu.com")
+                .setAllowedOriginPatterns("http://localhost", "http://localhost:8081", "http://kyungsu.com", "http://video.kyungsu.com", "http://dev.kyungsu.com", "http://dev.video.kyungsu.com"
+                        , "https://localhost", "https://localhost:8081", "https://kyungsu.com", "https://video.kyungsu.com", "https://dev.kyungsu.com", "https://dev.video.kyungsu.com")
                 .withSockJS();
     }
 }
