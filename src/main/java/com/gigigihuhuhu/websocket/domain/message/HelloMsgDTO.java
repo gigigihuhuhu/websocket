@@ -7,4 +7,5 @@ import lombok.Setter;
 @Setter
 public class HelloMsgDTO {
     private String clientId;
+    private Boolean isSneaker;
 }
